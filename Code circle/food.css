@@ -1,0 +1,144 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins',sans-serif;
+  }
+  body{
+      font-family: 'Poppins',sans-serif;
+      overflow-x: hidden;
+  }
+  .home{
+      background-color: mediumblue; 
+      padding: 10px;
+      height: 10vh; 
+      width: 100%; 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 10px;
+      align-items: center;
+  }
+  .image img{
+      height: 10vh;
+  }
+  .image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+  }
+  .about{
+      display: grid;
+      grid-template-columns: 50% 50%;
+  }
+  .abt_img{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .abt_img img{
+      height: 95%;
+      width: 100%;
+  }
+  .navigation{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      width: 90%;
+  }
+  .navigation a{
+      position: relative;
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+  }
+  .navigation a::before{
+      content: "";
+      position: absolute;top: 3vh;
+      height: 2px;
+      width: 0%;
+      background-color: white;
+      transition:1.3 s;
+  }
+  .navigation a:hover::before{
+      width: 100%;
+      transition: 1s;
+  }
+  .cards{
+      height: 70vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 10px;
+  }
+  .card{
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      color: #201658;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70%;
+      width: 25%;
+      transition: .55s;
+  }
+  .card:hover{
+      background: #201658;
+      color: white;
+      transform: scale(1.1);
+  }
+  .card p{
+      margin-top: 20px;
+      width: 80%;
+      font-style: italic;
+      font-size: 1.1rem;
+      font-weight: 400;
+  }
+  .bala{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 50px;
+  }
+  .bala_img img{
+      height: 60vh;
+      width: 60%;
+      border-radius: 50%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .bala_img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .bala_content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .bala_content h1{
+      width: 95%;
+  }
+  .bala_content p{
+      position: relative;top: 10%;
+      left: 30%;
+      font-size: 1.7rem;
+      color: #201658;
+  }
+  
